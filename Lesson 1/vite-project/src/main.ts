@@ -66,3 +66,22 @@ type UserObj = {
 // };
 // console.log(calculateTotal4(user2));
 
+// console.log(object)
+
+
+// type Person = {
+//     [key: string]: any;
+// }
+
+const person = {
+    name: 'John',
+    age: 30,
+    occupation: 'engineer'
+}
+
+function getPropertyValue<T, K extends keyof T>(obj: T, key: K): T[K] {
+    return obj[key];
+}
+
+console.log(getPropertyValue(person, 'age'));
+console.log(getPropertyValue(person, 'name'));
