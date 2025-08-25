@@ -11,6 +11,7 @@ type userProfile = {
     isActive: boolean,
 }
 
+
 let displayUserProfile = (user: userProfile): string => {
     return `Hi, ${user.age} y.o. ${user.username}! Your current isActive status is ${user.isActive}.`;
 }
